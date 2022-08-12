@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/login.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="./assets/js/login.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg blue-300">
+            <div class="container-fluid">
+                <div class="logo"></div>
+                <a class="navbar-brand logo" href="#">Kern Playlist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse items_navbar" id="navbarNav">
+                    <p class="paype">|</p>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Minha playlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cadastrar</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Descobrir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <!--FORMULÁRIO DE LOGIN-->
+
+            <form method="post">
+                <h1 class="title">Login</h1>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome de usuário</label>
+                    <input type="text" required="required" name="name" class="form-control name" id="name"
+                        aria-describedby="Nome de Usuário" placeholder="ex. Kéllen Kern">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" required="required" name="password" class="form-control" id="password">
+                </div>
+                <div class="submit_input">
+                    <a href="./index.html">
+                        <button onclick="saveName()" type="button" value="click here" class="btn btn-primary  button_logon">Submit</button>
+                    </a>
+                    </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

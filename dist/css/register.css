@@ -1,0 +1,22 @@
+@import url(./base/_variaveis.css);
+.register{
+    margin: 0 5%;
+    margin-bottom: 5%;
+}
+.form{
+    width: 70%;
+}
+#register_button{
+    background-color: var(--azul_claro);
+    color: var(--azul_escuro);
+    font-weight: 700;
+    border-color: transparent;
+}
+#register_button:hover{
+    background-color: var(--azul_escuro);
+    transition: 400ms;
+    color:var(--azul_claro);
+    font-weight: 700;
+    border-color: transparent;
+
+}

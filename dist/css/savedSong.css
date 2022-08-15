@@ -1,0 +1,15 @@
+@import url(./base/_variaveis.css);
+.savedSong{
+    margin: 0 5%;
+    margin-bottom: 5%;
+}
+.tableView thead {
+    color: var(--azul_claro);
+    text-align: center;
+    border-color: var(--azul_escuro);
+}
+
+.tableView tbody{
+    text-align: center;
+    border-color: var(--azul_escuro); 
+}

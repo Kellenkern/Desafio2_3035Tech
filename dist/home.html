@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist - Kern</title>
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="./js/login.js" defer></script>
+  </head>
+<body onload="getName()">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg blue-300">
+        <div class="container-fluid">
+            <div class="logo"></div>
+            <a class="navbar-brand logo" href="#">Kern Playlist</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse items_navbar" id="navbarNav">
+                <p class="paype">|</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subjects">My playlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#register">Register</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#savedSong">My Saved Songs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+    </section>
+    <section class="subjects" id="subjects">
+      <p class="title_section">My Playlist</p>
+      <div class="highlights"> 
+        <div class="highlights__first box">
+            <h3 class="highhlights__title">Liked songs</h3>
+        </div>
+        <div class="highlights__second box">
+            <h3 class="highhlights__title">PlayList1</h3>
+        </div>
+        <div class="highlights__second box">
+            <h3 class="highhlights__title">PlayList2</h3>
+        </div>
+        <div class="highlights__second box">
+            <h3 class="highhlights__title">PlayList3</h3>
+        </div>        
+        <div class="highlights__second box">
+            <h3 class="highhlights__title">PlayList4</h3>
+        </div>
+      </div>
+      <p class="title_section">Register a new music:</p>
+      <div id="mensagemView"></div>
+      <div class="register" id="register">
+        <form class="form">
+          <div class="mb-3">
+            <label for="music_name" class="form-label">Music Name</label>
+            <input type="text" class="form-control" id="music_name" aria-describedby="Music's name" placeholder="Music's name you want saving">
+          </div>
+          <div class="mb-3">
+            <label for="artist_name" class="form-label">Artist Name</label>
+            <input type="text" class="form-control" id="artist_name" aria-describedby="Artist's name" placeholder="Artist's name you want saving">
+          </div>
+          <div class="mb-3">
+            <label for="album_name" class="form-label">Album Name</label>
+            <input type="text" class="form-control" id="album_name" aria-describedby="Albun's name" placeholder="Album's name you want saving">
+          </div>
+          <button type="submit" class="btn btn-primary blue-300 button_logon" id="register_button">Register</button>
+        </form>
+      </div> 
+    </section>
+    <p class="title_section">My saved Song:</p>
+    <section class="savedSong" id="savedSong">
+      <div id="musicView"></div>
+    </section>
+
+  
+
+  </main>
+  <footer class="footer blue-300">
+    <p>@2022 Kéllen Kern | Todos os Direitos reservados</p>
+  </footer>
+  <script type="module" src="./js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

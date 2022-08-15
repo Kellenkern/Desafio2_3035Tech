@@ -1,0 +1,14 @@
+@import url(./base/_variaveis.css);
+@import url(./components/_components.css);
+@import url(./highlights.css);
+@import url(./register.css);
+@import url(./responsivo.css);
+@import url(./savedSong.css);
+#home{
+    padding-top: 3em;
+}
+.body{
+    justify-content: center;
+    display: grid;
+}
+

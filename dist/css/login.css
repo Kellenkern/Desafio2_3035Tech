@@ -1,0 +1,30 @@
+  @import url(./base/_variaveis.css);
+  @import url(./components/_components.css);
+  .content{
+    width: 50%;
+    min-height: 100vh;    
+    margin: 0px auto;
+    position: relative;
+    padding-top: 2%;
+  }
+  
+
+  p{
+    margin-bottom:15px;
+  }
+   
+  .content p:first-child{
+    margin: 0px;
+  }
+   
+  label{
+    color: var(--azul_escuro);
+    position: relative;
+  }
+
+@media screen and (max-width: 490px) {
+  .content{
+    width: 90%;
+  }
+  
+}
